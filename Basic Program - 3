@@ -1,0 +1,7 @@
+l=[2,4,6,8,10]
+print('original list:',l)
+print('first element:',l[0])
+print('second element:',l[1])
+print('third element:',l[2])
+print('fourth element:',l[3])
+print('fifth element:',l[4])

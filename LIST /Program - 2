@@ -1,16 +1,9 @@
-#accessing elements in a List
-l=[2,4,6,8,10]
-print('original list:',l)
-print('first element:',l[0])
-print('second element:',l[1])
-print('third element:',l[2])
-print('fourth element:',l[3])
-print('fifth element:',l[4])
+#adding elements to a list
+a=[3,6,9,12]
+print('original list:',a)
+a.append(15)
+print('after appending:',a)
 
 #output
-original list: [2, 4, 6, 8, 10]
-first element: 2
-second element: 4
-third element: 6
-fourth element: 8
-fifth element: 10
+original list: [3, 6, 9, 12]
+after appending: [3, 6, 9, 12, 15]

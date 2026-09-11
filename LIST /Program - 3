@@ -1,0 +1,9 @@
+#reverse the list
+a=[3,6,9,12]
+print('original list:',a)
+a.reverse()
+print('reversed list',a)
+
+#output
+original list: [3, 6, 9, 12]
+reversed list [12, 9, 6, 3]

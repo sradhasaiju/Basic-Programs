@@ -1,10 +1,9 @@
 #removing an element by index
+o=[1,2,3,4,5]
 index=int(input('Enter the index to remove:'))
 o.pop(index)
-print('after removing:',o)
-#removing an element
-ele=int(input('Enter the element to remove:'))
-h.remove(ele)
-print('after removing:',h)
+print('After removing:',o)
 
 #output
+Enter the index to remove:4
+After removing: [1, 2, 3, 4]

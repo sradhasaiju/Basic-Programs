@@ -1,0 +1,10 @@
+#removing an element by index
+index=int(input('Enter the index to remove:'))
+o.pop(index)
+print('after removing:',o)
+#removing an element
+ele=int(input('Enter the element to remove:'))
+h.remove(ele)
+print('after removing:',h)
+
+#output

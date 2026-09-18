@@ -1,0 +1,11 @@
+#insert a new item before the second element in an existing list
+l=['Carrot','Apple','Grape']
+print('List before inserting:',l)
+n=input('Enter the new item:')
+l.insert(1,n)
+print('List after inserting:',l)
+
+#output
+List before inserting: ['Carrot', 'Apple', 'Grape']
+Enter the new item:Pineapple
+List after inserting: ['Carrot', 'Pineapple', 'Apple', 'Grape']

@@ -1,0 +1,40 @@
+print('2.SUBTRACTION')
+print('3.DIVISION')
+print('4.MULTIPLICATION')
+
+c=int(input("Enter your choice:"))
+if c==1:
+    a=int(input("Enter a number:"))
+    b=int(input("Enter a number:"))
+    s=a+b
+    print('Sum',a,'and',b,'=',s)
+elif c==2:
+    a=int(input("Enter a number:"))
+    b=int(input("Enter a number:"))
+    s=a-b
+    print('Difference between',a,'and',b,'=',s)
+elif c==3:
+    a=int(input("Enter a number:"))
+    b=int(input("Enter a number:"))
+    s=a*b
+    print('Product of',a,'and',b,'=',s)
+elif c==4:
+    a=int(input("Enter a number:"))
+    b=int(input("Enter a number:"))
+    if b==0:
+        print("Division by zero is undefined")
+    else:
+        s=a/b
+
+#output
+
+Clear
+1.ADDITION
+2.SUBTRACTION
+3.DIVISION
+4.MULTIPLICATION
+Enter your choice:1
+Enter a number:2
+Enter a number:3
+Sum 2 and 3 = 5
+        print(a,'divided by',b,'=',s)

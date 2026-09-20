@@ -1,0 +1,12 @@
+#check whether the given number is positive, negative or zero
+o=int(input('Enter a number: '))
+if o>0:
+  print(o,'is a positive number')
+elif o==0:
+  print('The number is zero')
+elif o<0:
+  print(o,'is a negative number')
+
+#output
+Enter a number: -58
+-58 is a negative number

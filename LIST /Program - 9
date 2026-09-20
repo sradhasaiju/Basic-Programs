@@ -1,0 +1,84 @@
+'''
+to accept 20 numbers and save it in a list and perform the following operation:
+a.count similar elements of list and print their index value   
+b.count even and odd values of list 
+c.count positive and negative values of list.
+'''
+
+n=[]
+c=0
+for i in range(20):
+    o=int(input('Enter value:'))
+    n.append(o)
+print('\nLIST:',n)
+
+#a. count similar elements and print their index values
+k=[]
+for j in range(20):
+    if n[j] not in k and n.count(n[j])>1:
+        print('Number',n[j],'repeats at indexes ->',end=' ')
+        for l in range(20):
+            if n[l]==n[j]:
+                print(l,end=',')
+        print()
+    k.append(n[j])
+    
+#b.count even and odd values of list 
+e=0
+o=0
+for i in n:
+    if i%2==0:
+        e+=1
+    else:
+        o+=1
+print('Even no:',e)
+print('Odd no:',o)
+
+#c.count positive and negative values of list.
+p=0
+l=0
+for j in n:
+    if j>0:
+        p+=1
+    elif j<0:
+        l+=1
+print('Positive no:',p)
+print('Negative no:',l)
+
+#output
+Enter value:1
+Enter value:2
+Enter value:3
+Enter value:4
+Enter value:5
+Enter value:6
+Enter value:7
+Enter value:8
+Enter value:9
+Enter value:10
+Enter value:1
+Enter value:2
+Enter value:3
+Enter value:4
+Enter value:5
+Enter value:6
+Enter value:7
+Enter value:8
+Enter value:9
+Enter value:10
+
+LIST: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Number 1 repeats at indexes -> 0,10,
+Number 2 repeats at indexes -> 1,11,
+Number 3 repeats at indexes -> 2,12,
+Number 4 repeats at indexes -> 3,13,
+Number 5 repeats at indexes -> 4,14,
+Number 6 repeats at indexes -> 5,15,
+Number 7 repeats at indexes -> 6,16,
+Number 8 repeats at indexes -> 7,17,
+Number 9 repeats at indexes -> 8,18,
+Number 10 repeats at indexes -> 9,19,
+Even no: 10
+Odd no: 10
+Positive no: 20
+Negative no: 0

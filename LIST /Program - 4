@@ -1,9 +1,0 @@
-#insert element at a specified position
-o=[1,2,3,4,5]
-print('original list:',o)
-o.insert(2,6)
-print('after inserting:',o)
-
-#output
-original list: [1, 2, 3, 4, 5]
-after inserting: [1, 2, 6, 3, 4, 5]

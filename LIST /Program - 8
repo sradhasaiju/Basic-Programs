@@ -1,9 +1,0 @@
-#removing an element
-h=[10,20,30,40,50,60]
-ele=int(input('Enter the element to remove:'))
-h.remove(ele)
-print('After removing:',h)
-
-#output
-Enter the element to remove:50
-After removing: [10, 20, 30, 40, 60]

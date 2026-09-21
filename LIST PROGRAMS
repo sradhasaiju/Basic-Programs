@@ -1,0 +1,246 @@
+#LIST
+#1.create a list of 5 integers and display the list items also access individual elements through index 
+l=[2,4,6,8,10]
+print('original list:',l)
+print('first element:',l[0])
+print('second element:',l[1])
+print('third element:',l[2])
+print('fourth element:',l[3])
+print('fifth element:',l[4])
+
+#output
+original list: [2, 4, 6, 8, 10]
+first element: 2
+second element: 4
+third element: 6
+fourth element: 8
+fifth element: 10
+
+
+#2.adding elements to a list
+a=[3,6,9,12]
+print('original list:',a)
+a.append(15)
+print('after appending:',a)
+
+#output
+original list: [3, 6, 9, 12]
+after appending: [3, 6, 9, 12, 15]
+
+
+#3.reverse the list
+a=[3,6,9,12]
+print('original list:',a)
+a.reverse()
+print('reversed list:',a)
+
+#output
+original list: [3, 6, 9, 12]
+reversed list: [12, 9, 6, 3]
+
+
+#5.appending items of list1 to list2 in the front
+j=[40,50,60]
+h=[10,20,30]
+h=h+j
+print('List 2:',h)
+
+#output
+List 2: [10, 20, 30, 40, 50, 60]
+
+
+#6.insert a new item before the second element in an existing list
+l=['Carrot','Apple','Grape']
+print('List before inserting:',l)
+n=input('Enter the new item:')
+l.insert(1,n)
+print('List after inserting:',l)
+
+#output
+List before inserting: ['Carrot', 'Apple', 'Grape']
+Enter the new item:Pineapple
+List after inserting: ['Carrot', 'Pineapple', 'Apple', 'Grape']
+
+
+#7.removing an element by index
+o=[1,2,3,4,5]
+index=int(input('Enter the index to remove:'))
+o.pop(index)
+print('After removing:',o)
+
+#output
+Enter the index to remove:4
+After removing: [1, 2, 3, 4]
+
+
+#8.removing an specified element
+h=[10,20,30,40,50,60]
+ele=int(input('Enter the element to remove:'))
+h.remove(ele)
+print('After removing:',h)
+
+#output
+Enter the element to remove:50
+After removing: [10, 20, 30, 40, 60]
+
+
+'''
+9.to accept 20 numbers and save it in a list and perform the following operation:
+a.count similar elements of list and print their index value   
+b.count even and odd values of list 
+c.count positive and negative values of list.
+'''
+
+n=[]
+c=0
+for i in range(20):
+    o=int(input('Enter value:'))
+    n.append(o)
+print('\nLIST:',n)
+
+#a. count similar elements and print their index values
+k=[]
+for j in range(20):
+    if n[j] not in k and n.count(n[j])>1:
+        print('Number',n[j],'repeats at indexes ->',end=' ')
+        for l in range(20):
+            if n[l]==n[j]:
+                print(l,end=',')
+        print()
+    k.append(n[j])
+    
+#b.count even and odd values of list 
+e=0
+o=0
+for i in n:
+    if i%2==0:
+        e+=1
+    else:
+        o+=1
+print('Even no:',e)
+print('Odd no:',o)
+
+#c.count positive and negative values of list.
+p=0
+l=0
+for j in n:
+    if j>0:
+        p+=1
+    elif j<0:
+        l+=1
+print('Positive no:',p)
+print('Negative no:',l)
+
+#output
+Enter value:1
+Enter value:2
+Enter value:3
+Enter value:4
+Enter value:5
+Enter value:6
+Enter value:7
+Enter value:8
+Enter value:9
+Enter value:10
+Enter value:1
+Enter value:2
+Enter value:3
+Enter value:4
+Enter value:5
+Enter value:6
+Enter value:7
+Enter value:8
+Enter value:9
+Enter value:10
+
+LIST: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Number 1 repeats at indexes -> 0,10,
+Number 2 repeats at indexes -> 1,11,
+Number 3 repeats at indexes -> 2,12,
+Number 4 repeats at indexes -> 3,13,
+Number 5 repeats at indexes -> 4,14,
+Number 6 repeats at indexes -> 5,15,
+Number 7 repeats at indexes -> 6,16,
+Number 8 repeats at indexes -> 7,17,
+Number 9 repeats at indexes -> 8,18,
+Number 10 repeats at indexes -> 9,19,
+Even no: 10
+Odd no: 10
+Positive no: 20
+Negative no: 0
+
+
+'''
+#10.accept 10 values from user and save it in list. Perform following operations on it  
+a) Sort list in ascending order using sorted() function and display sorted list
+b) sort list in descending order using sort() function
+c) display length of list
+'''
+q=[]
+for i in range(10):
+ w=int(input('Enter no:'))
+ q.append(w)
+print("original",q)
+
+#ascending
+a=sorted(q)
+print('List after ascending',a)
+
+#descending
+q.sort(reverse=True)
+print('List after descending',q)
+
+#length of the list
+g=len(q)
+print('Length of list',g)
+
+#output
+Enter no:2
+Enter no:4
+Enter no:6
+Enter no:8
+Enter no:10
+Enter no:12
+Enter no:14
+Enter no:16
+Enter no:18
+Enter no:20
+Original: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+List after ascending: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+List after descending: [20, 18, 16, 14, 12, 10, 8, 6, 4, 2]
+Length of list: 10
+
+#11.accept two lists from user and merge them using + in a single list
+l1=[]
+l2=[]
+print('Enter 5 values for list 1')
+for i in range(5):
+    n=int(input('Enter a value'))
+    l1.append(n)
+print("list 1:",l1)
+print('Enter 5 values for list 2')
+for j in range(5):
+    m=int(input('Enter a value'))
+    l2.append(m)
+print("list 2:",l2)    
+
+k=l1+l2
+print('Merged list:',k)
+
+#output
+Enter 5 values for list 1
+Enter a value:1
+Enter a value:2
+Enter a value:3
+Enter a value:4
+Enter a value:5
+list 1: [1, 2, 3, 4, 5]
+Enter 5 values for list 2
+Enter a value:6
+Enter a value:7
+Enter a value:8
+Enter a value:9
+Enter a value:10
+list 2: [6, 7, 8, 9, 10]
+Merged list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+

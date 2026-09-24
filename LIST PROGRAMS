@@ -282,6 +282,18 @@ The acronym is: RAM
 
 
 
+#13.print the abbreviation of a month, given its number
+m=['January','February','March','April','May','June','July','August','September','October','November','December']
+ch=int(input("Enter the month number (1-12)"))
+if ch>=1 and ch<=12:
+    print('Month abbreviation:',m[ch-1])
+else:
+    print('Invalid month no')
+
+#output
+Enter the month number (1-12)5
+Month abbreviation: May
+
 
 
 

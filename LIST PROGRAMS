@@ -42,7 +42,7 @@ reversed list: [12, 9, 6, 3]
 
 
 
-#4.
+#4.program to print the number of occurrences of a specified element in a list
 l=[2,3,3,4,2,7,8,8,9,1,5,6]
 c=int(input("Enter the number to search:"))
 print("The number",c,'appears',l.count(c),'times')
@@ -350,3 +350,48 @@ Enter the choice (1-5): 5
 
 
 #15.program to merge two lists into a dictionary (one list as keys, another as values)
+k=[1,2,3]
+n=['aaa','bbb','ccc']
+dic=dict(zip(k,n))
+print(dic)
+
+#output
+{1: 'aaa', 2: 'bbb', 3: 'ccc'}
+
+
+
+#16.program to remove duplicate elements from a list
+a=[1,2,3,4,4,4,5,5,2,2,3]
+print(list(set(a)))
+
+#output
+[1, 2, 3, 4, 5]
+
+
+
+#17.python program to convert two lists into a dictionary using zip()
+k=['Name','Age','City']
+n=['Anu',22,'Mumbai']
+d=dict(zip(k,n))
+print(d)
+
+#output
+{'Name': 'Anu', 'Age': 22, 'City': 'Mumbai'}
+
+
+
+#18.program to find common elements in two lists
+l1=[10,20,30,40,50,60]
+l2=[50,60,70,80,90,100]
+o=[]
+for i in l1:
+    if i in l2:
+        o.append(i)
+print("LIST 1:",l1)
+print("LIST 2:",l2)
+print("Common elements:",o)
+
+#output
+LIST 1: [10, 20, 30, 40, 50, 60]
+LIST 2: [50, 60, 70, 80, 90, 100]
+Common elements: [50, 60]

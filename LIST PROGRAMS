@@ -284,18 +284,69 @@ The acronym is: RAM
 
 #13.print the abbreviation of a month, given its number
 m=['January','February','March','April','May','June','July','August','September','October','November','December']
-ch=int(input("Enter the month number (1-12)"))
+ch=int(input("Enter the month number (1-12):"))
 if ch>=1 and ch<=12:
     print('Month abbreviation:',m[ch-1])
 else:
     print('Invalid month no')
 
 #output
-Enter the month number (1-12)5
+Enter the month number (1-12):5
 Month abbreviation: May
 
 
 
+#14.program to insert, delete, and display elements of a list
+l=[]
+while True:
+    print("1. Insert an element")
+    print("2. Delete an element (by value)")
+    print("3. Delete an element (by position/index)")
+    print("4. Display the list")
+    print("5. Exit")
+    
+    ch=int(input('Enter the choice (1-5): '))
+    if ch==1:
+        n = input("Enter the element to add: ")
+        l.append(n)
+        print(n, "is added to the list")
+    elif ch==2:
+        if len(l)==0:
+            print("The list is empty")
+        else:
+            r=input("Enter the element to remove: ")
+            if r in l:
+                l.remove(r) 
+                print(r, "is removed from the list")
+            else:
+                print("Item is not in the list.")          
+    elif ch==3:
+        if len(l)==0:
+            print("The list is empty")
+        else:
+            p=int(input("Enter the index of the element to remove: "))
+            if 0 <=p<len(l):
+                r=l.pop(p)  
+                print(r,"is removed from the list")
+            else:
+                print("Invalid index")           
+    elif ch==4:
+        if len(l)==0:
+            print("The list is empty")
+        else:
+            print("Your current list:", l)    
+    elif ch==5:
+        break  
+    else:
+        print("Invalid choice")
+#output
+1. Insert an element
+2. Delete an element (by value)
+3. Delete an element (by position/index)
+4. Display the list
+5. Exit
+Enter the choice (1-5): 5
 
 
 
+#15.program to merge two lists into a dictionary (one list as keys, another as values)

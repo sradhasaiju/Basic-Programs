@@ -1,3 +1,4 @@
+#TUPLE PROGRAMS
 #1.print the 4th element from first and 4th element from last in a tuple
 t=(10,20,30,40,50,60,70,80,90,100)
 print("Tuple:",t)
@@ -35,3 +36,55 @@ print("Tuple:",l)
 #output
 List: [50, 60, 70, 80]
 Tuple: (50, 60, 70, 80)
+
+
+
+#4.find the index of an item in a tuple
+n=(10,20,30,40,50)
+e=int(input("Enter the element:"))
+if e in n:
+    print("Index of element:",n.index(e))
+else:
+    print("Element not found")
+
+#output
+Enter the element:20
+Index of element: 1
+
+
+
+#5.replace last value of tuples in a list to 100
+n=[(10,20,30),(40,50,60),(70,80,90)]
+nl=[]
+for i in n:
+    nt=i[:-1]+(100,)
+    nl.append(nt)
+print('Original list:',n)
+print("Updated list:",nl)
+
+#output
+Original list: [(10, 20, 30), (40, 50, 60), (70, 80, 90)]
+Updated list: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
+
+
+
+#6.to find the maximum and minimum element in a tuple
+n=(10,20,30,40,50)
+print("Maximium element:",max(n))
+print("Minimium element:",min(n))
+
+#output
+Maximium element: 50
+Minimium element: 10
+
+
+
+#7.program to swap the first and last element of a tuple
+n=(10,20,30,40,50)
+nt=(n[-1],)+n[1:-1]+(n[0],)
+print("Original tuple:",n)
+print("Tuple after swapping:",nt)
+
+#output:
+Original tuple: (10, 20, 30, 40, 50)
+Tuple after swapping: (50, 20, 30, 40, 10)

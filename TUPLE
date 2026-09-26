@@ -1,0 +1,37 @@
+#1.print the 4th element from first and 4th element from last in a tuple
+t=(10,20,30,40,50,60,70,80,90,100)
+print("Tuple:",t)
+print('4th element from the first:',t[3])
+print('4th ekement from the last:',t[-4])
+
+#output
+Tuple: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+4th element from the first: 40
+4th ekement from the last: 70
+
+
+
+#2.check whether an element exists in a tuple or not
+m=(1,2,3,4,5,6,2,2,2,2,3)
+n=int(input("Enter the element to search:"))
+c=0
+if  n in m: 
+    print("Element exists in the tuple")
+else:    
+    print("Element doesn't exist in the tuple")
+
+#output
+Enter the element to search:3
+Element exists in the tuple
+
+
+
+#3.convert a list into a tuple
+k=[50,60,70,80]
+l=tuple(k)
+print("List:",k)
+print("Tuple:",l)
+
+#output
+List: [50, 60, 70, 80]
+Tuple: (50, 60, 70, 80)
